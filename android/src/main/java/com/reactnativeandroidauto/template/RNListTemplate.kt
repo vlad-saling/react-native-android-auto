@@ -37,7 +37,7 @@ class RNListTemplate(
         if (type == "item-list") {
           builder.addSectionedList(
             SectionedItemList.create(
-              parseItemListChildren(child.getMap("children")!!),
+              parseItemListChildren(child),
               child.getString("header")!!,
             )
           )
